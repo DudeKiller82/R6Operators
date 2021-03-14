@@ -7,25 +7,6 @@
 	background-size: contain;
 }
 body {
-	--SAS-color: rgb(144, 111, 121);
-	--FBISWAT-color: rgb(215, 91, 43);
-	--GIGN-color: rgb(27, 54, 82);
-	--SPETSNAZ-color: rgb(170, 21, 18);
-	--GSG9-color: rgb(248, 168, 40);
-	--JFT2-color: rgb(17, 126, 163);
-	--BOPE-color: rgb(76, 141, 64);
-	--NAVYSEALS-color: rgb(206, 160, 36);
-	--SAT-color: rgb(154, 39, 62);
-	--GEO-color: rgb(111, 46, 140);
-	--SDU-color: rgb(174, 83, 50);
-	--GROM-color: rgb(84, 157, 155);
-	--SMB-color: rgb(196, 206, 207);
-	--CBRN-color: rgb(250, 174, 27);
-	--GIS-color: rgb(102, 109, 35);
-	--GSUTR-color: rgb(111, 128, 143);
-	--GIGR-color: rgb(168, 131, 79);
-	--SASR-color: rgb(207, 1, 88);
-	--RECRUIT-color: white;
 	background-color:black;
 }
 div {
@@ -44,13 +25,18 @@ div.info:hover p.info {
 div.operator {
 	color:black;
 	display: inline-block;
-	width:24%;
+}
+div.operator1 {
+	width:99%;
 }
 div.operator2 {
 	width:49%;
 }
 div.operator3 {
 	width:32%;
+}
+div.operator4 {
+	width:24%;
 }
 div.operator5 {
 	width:19%;
@@ -121,118 +107,4 @@ a:hover {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-}
-.SAS {
-	color:var(--SAS-color);
-}
-.FBISWAT {
-	color:var(--FBISWAT-color);
-}
-.GIGN {
-	color:var(--GIGN-color);
-}
-.SPETSNAZ {
-	color:var(--SPETSNAZ-color);
-}
-.GSG9 {
-	color:var(--GSG9-color);
-}
-.JFT2 {
-	color:var(--JFT2-color);
-}
-.BOPE {
-	color:var(--BOPE-color);
-}
-.NAVYSEALS {
-	color:var(--NAVYSEALS-color);
-}
-.SAT {
-	color:var(--SAT-color);
-}
-.GEO {
-	color:var(--GEO-color);
-}
-.SDU {
-	color:var(--SDU-color);
-}
-.GROM {
-	color:var(--GROM-color);
-}
-.SMB {
-	color:var(--SMB-color);
-}
-.CBRN {
-	color:var(--CBRN-color);
-}
-.GIS {
-	color:var(--GIS-color);
-}
-.GSUTR {
-	color:var(--GSUTR-color);
-}
-.GIGR {
-	color:var(--GIGR-color);
-}
-.SASR {
-	color:var(--SASR-color);
-}
-.RECRUIT {
-	color:var(--RECRUIT-color);
-}
-.backSAS {
-	background-image:linear-gradient(to right, #272727, var(--SAS-color));
-}
-.backFBISWAT {
-	background-image:linear-gradient(to right, #272727, var(--FBISWAT-color));
-}
-.backGIGN {
-	background-image:linear-gradient(to right, #272727, var(--GIGN-color));
-}
-.backSPETSNAZ {
-	background-image:linear-gradient(to right, #272727, var(--SPETSNAZ-color));
-}
-.backGSG9 {
-	background-image:linear-gradient(to right, #272727, var(--GSG9-color));
-}
-.backJFT2 {
-	background-image:linear-gradient(to right, #272727, var(--JFT2-color));
-}
-.backBOPE {
-	background-image:linear-gradient(to right, #272727, var(--BOPE-color));
-}
-.backNAVYSEALS {
-	background-image:linear-gradient(to right, #272727, var(--NAVYSEALS-color));
-}
-.backSAT {
-	background-image:linear-gradient(to right, #272727, var(--SAT-color));
-}
-.backGEO {
-	background-image:linear-gradient(to right, #272727, var(--GEO-color));
-}
-.backSDU {
-	background-image:linear-gradient(to right, #272727, var(--SDU-color));
-}
-.backGROM {
-	background-image:linear-gradient(to right, #272727, var(--GROM-color));
-}
-.back707thSMB {
-	background-image:linear-gradient(to right, #272727, var(--SMB-color));
-}
-.backCBRN {
-	background-image:linear-gradient(to right, #272727, var(--CBRN-color));
-}
-.backGIS {
-	background-image:linear-gradient(to right, #272727, var(--GIS-color));
-}
-.backGSUTR {
-	background-image:linear-gradient(to right, #272727, var(--GSUTR-color));
-}
-.backGIGR {
-	background-image:linear-gradient(to right, #272727, var(--GIGR-color));
-}
-.backSASR {
-	background-image:linear-gradient(to right, #272727, var(--SASR-color));
-}
-.backRECRUIT {
-	background-image:linear-gradient(to right, #272727, var(--RECRUIT-color));
 }
