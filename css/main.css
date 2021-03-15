@@ -1,6 +1,7 @@
 .header {
 	color: red;
 	height: 400px;
+	text-align: center;
 	background-image: url(../img/banner.webp);
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -8,62 +9,6 @@
 }
 body {
 	background-color:black;
-}
-div {
-	position: relative;
-	text-align: center;
-}
-div.column {
-	display: inline-block;
-}
-div.unit {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-div.info:hover p.info {
-	display: block;
-}
-div.operator {
-	color:black;
-	display: inline-block;
-}
-div.operator1 {
-	width:99%;
-}
-div.operator2 {
-	width:49%;
-}
-div.operator3 {
-	width:32%;
-}
-div.operator4 {
-	width:24%;
-}
-div.operator5 {
-	width:19%;
-}
-img {
-	position: relative;
-	border-style:none;
-}
-img.badge {
-	max-height:300px;
-    min-height:300px;
-}
-img.fullBody {
-	max-height:500px;
-    min-height:500px;
-}
-img.avatar {
-	max-height:125px;
-    min-height:125px;
-}
-img.unit {
-	max-width:300px;
-}
-img.flag {
-	max-height:50px;
-	border:solid white 1px;
 }
 h1, h2, h3, a {
 	font-family: Stencil;
@@ -82,24 +27,9 @@ h3.op {
 	font-size:20px;
 	color:white;
 }
-p.info {
-	display: none;
-	position: absolute;
-	bottom: 30px;
-	right: 0px;
-	opacity:0.7;
-	font-size: 20px;
-	text-align: left;
-	color: black;
-	background-color: white;
-	padding: 10px;
-	max-height:300px;
-	overflow-y: auto;
-	z-index: 1;
-}
 a {
 	margin: 0px;
-	padding: 10px 20px;
+	padding: 2px 5px;
 	color: white;
 	text-decoration: none;
     box-sizing: border-box;
@@ -112,4 +42,51 @@ a:hover {
 	position: sticky;
 	top: 0;
 	z-index: 2;
+}
+div.column {
+	display: inline-block;
+	vertical-align: top;
+}
+div.column.operator {
+	width: 49%;
+}
+div.column.pic {
+	text-align: center;
+}
+div.column.pic.unit {
+	width: 25%;
+}
+div.column.pic.op {
+	width: 40%;
+}
+div.column.desc.unit {
+	width: 64%;
+}
+div.column.desc.op {
+	width: 59%;
+}
+div.unit {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+div.info {
+	text-align: justify;
+	font-size: 20px;
+}
+img.badge {
+	max-height:300px;
+    min-height:300px;
+}
+img.fullBody {
+	max-height:500px;
+    max-width: 100%;
+}
+img.avatar {
+	max-height:125px;
+    min-height:125px;
+}
+img.flag {
+	min-height:50px;
+	max-height:50px;
+	border:solid white 1px;
 }
