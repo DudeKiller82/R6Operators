@@ -74,8 +74,12 @@ h1 {
 h2 {
 	font-size:30px;
 }
-h3 {
+h2.op {
+	color:white;
+}
+h3.op {
 	font-size:20px;
+	color:white;
 }
 p.info {
 	display: none;

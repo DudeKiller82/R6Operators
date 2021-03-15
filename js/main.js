@@ -36,11 +36,12 @@ var getUnitsHtml = function getUnitsHtml(units) {
         html += '<div style="background-image:linear-gradient(to right, #272727, ' + unit.color + ')">';
         unit.ops.forEach(function(op) {
             html += '<div class="operator operator' +  unit.ops.length + ' info">';
-            html += '    <img class="fullBody" src="img/units/' + unit.id + '/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
-            html += '    <br>';
             html += '    <img class="avatar" src="img/units/' + unit.id + '/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
+            html += '    <br>';
+            html += '    <img class="fullBody" src="img/units/' + unit.id + '/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
+            html += '    <h2 class="op">' + op.nick + '</h2>';
+            html += '    <h3 class="op">' + op.first + ' ' + op.last + '</h3>';
             html += '    <img class="side" src="img/' + op.side + '.webp">';
-            html += '   <h3>' + op.first + ' "' + op.nick + '" ' + op.last + '</h3>';
             html += '    <p class="info">' + op.doc + '</p>';
             html += '</div>';
         });
