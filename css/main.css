@@ -18,6 +18,7 @@ div.column {
 }
 div.unit {
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
 div.info:hover p.info {
 	display: block;
@@ -45,7 +46,7 @@ img {
 	position: relative;
 	border-style:none;
 }
-img.fullBody {
+img.badge {
 	max-height:300px;
     min-height:300px;
 }
@@ -107,7 +108,7 @@ a:hover {
 	color:red;
 	background-color:black;
 }
-#bookmark{
+#bookmarks{
 	position: sticky;
 	top: 0;
 	z-index: 2;
