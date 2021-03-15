@@ -22,13 +22,13 @@ var getUnitsHtml = function getUnitsHtml(units) {
     units.forEach(function(unit) {
         html += '<div id="' + unit.id + '" class="unit info" style="color:' + unit.color + '">';
         html += '<div class="column">';
-        html += '    <img id="img' + unit.id + '" class="badge" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
+        html += '    <img class="badge" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
         html += '</div>';
         html += '<div class="column">';
         html += '    <h1>' + unit.short + '</h1>';
         html += '    <h2>' + unit.name + '</h2>';
         unit.flags.forEach(function(flag) {
-            html += '    <img src="img/flag/' + flag + '.png" class="flag">';
+            html += '    <img class="flag" src="img/flag/' + flag + '.png">';
         });
         html += '</div>';
         html += '<p class="info">' + unit.doc + '</p>';
@@ -39,7 +39,7 @@ var getUnitsHtml = function getUnitsHtml(units) {
             html += '    <img class="fullBody" src="img/units/' + unit.id + '/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
             html += '    <br>';
             html += '    <img class="avatar" src="img/units/' + unit.id + '/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
-            html += '    <img src="img/' + op.side + '.webp" class="side">';
+            html += '    <img class="side" src="img/' + op.side + '.webp">';
             html += '   <h3>' + op.first + ' "' + op.nick + '" ' + op.last + '</h3>';
             html += '    <p class="info">' + op.doc + '</p>';
             html += '</div>';
@@ -278,7 +278,7 @@ var getUnitsData = function getUnitsData() {
             ]
         },
         {
-            id: 'JaegerCorps',
+            id: 'JAEGERCORPS',
             color: 'rgb(46, 62, 134)',
             short: 'JAEGER CORPS',
             name: 'Jægerkorpset',
