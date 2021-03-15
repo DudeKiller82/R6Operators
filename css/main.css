@@ -1,8 +1,8 @@
 .header {
 	color: red;
 	height: 400px;
-	background-image: url(https://vignette.wikia.nocookie.net/rainbowsix/images/e/e6/Tom_clancys_rainbow_six_siege-wallpaper-1366x768.jpg);
-	background-repeat: repeat;
+	background-image: url(../img/banner.webp);
+	background-repeat: no-repeat;
 	background-position-x: center;
 	background-size: contain;
 }
