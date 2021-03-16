@@ -11,7 +11,6 @@ var loadUnits = function loadUnits(document) {
 var getHeaderHtml = function getBookmarksHtml(units) {
     var html = '';
     html += '<div class="header">';
-    html += '    <h1>Operators<h1>';
     html += '</div>';
     return html;
 };
