@@ -10,7 +10,7 @@
 body {
 	background-color:black;
 }
-h1, h2, h3, a {
+h1, h2, h3 {
 	font-family: Stencil;
 	font-weight: normal;
 }
@@ -21,7 +21,6 @@ h2 {
 	font-size:30px;
 }
 h2.op {
-	font-size:30px;
 	color:white;
 }
 h3 {
@@ -29,7 +28,6 @@ h3 {
 	color:white;
 }
 a {
-	margin: 0px;
 	padding: 2px 5px;
 	color: white;
 	text-decoration: none;
@@ -42,6 +40,7 @@ a:hover {
 #bookmarks{
 	position: sticky;
 	top: 0;
+	height: 0px;
 	z-index: 2;
 }
 div.column {

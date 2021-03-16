@@ -3,15 +3,23 @@
 
 var loadUnits = function loadUnits(document) {
     var units = getUnitsData();
+    document.getElementById("header").innerHTML = getHeaderHtml(units);
     document.getElementById("bookmarks").innerHTML = getBookmarksHtml(units);
     document.getElementById("units").innerHTML = getUnitsHtml(units);
 }
 
+var getHeaderHtml = function getBookmarksHtml(units) {
+    var html = '';
+    html += '<div class="header">';
+    html += '    <h1>Operators<h1>';
+    html += '</div>';
+    return html;
+};
 var getBookmarksHtml = function getBookmarksHtml(units) {
     var html = '';
 
     units.forEach(function(unit) {
-        html += '<a href="#' + unit.id + '" style="background-color:' + unit.color + '">' + unit.short + '</a>';
+        html += '<a href="#' + unit.id + '" style="background-image:linear-gradient(to right, #272727, ' + unit.color + ')">' + unit.short + '</a>';
     });
     return html;
 };
@@ -36,16 +44,16 @@ var getUnitsHtml = function getUnitsHtml(units) {
         unit.ops.forEach(function(op) {
             html += '<div class="column operator">';
             html += '    <div class="column pic op">';
-            html += '        <img class="avatar" src="img/op/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
+            html += '        <img class="avatar" src="img/ops/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
             html += '        <br>';
-            html += '        <img class="fullBody" src="img/op/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
+            html += '        <img class="fullBody" src="img/ops/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
             html += '    </div>';
             html += '    <div class="column desc op">';
             html += '        <h2 class="op">' + op.nick + '</h2>';
             if (op.first != null) {
                 html += '        <h3>' + op.first + ' ' + op.last + '</h3>';
             }
-            html += '        <img class="flag" src="img/flag/' + op.flag + '.png">';
+            html += '        <img class="flag" src="img/flags/' + op.flag + '.png">';
             html += '        <br>';
             if (op.side != null) {
                 html += '        <img class="side" src="img/' + op.side + '.webp">';
@@ -281,7 +289,7 @@ var getUnitsData = function getUnitsData() {
             ]
         },
         {
-            id: 'RAINBOW', color: 'grey', short: 'Recruits', name: 'Team Rainbow', doc: 'Team Rainbow (also known as RAINBOW) is an elite international counterterrorist unit that falls under the direct supervision of NATO. The unit was formed to combat terrorist actions worldwide in a more effective way by assembling a team of elite counterterrorist operatives from nations all over the world. Since its formation in 1999, Rainbow has prevented several terrorist plots since its activation but was deactivated in 2012. The unit was reactivated three years later under a new director codenamed "Six", to combat the White Masks and their widespread terrorist attacks.',
+            id: 'RAINBOW', color: 'grey', short: 'RAINBOW', name: 'Team Rainbow Recruits', doc: 'Team Rainbow (also known as RAINBOW) is an elite international counterterrorist unit that falls under the direct supervision of NATO. The unit was formed to combat terrorist actions worldwide in a more effective way by assembling a team of elite counterterrorist operatives from nations all over the world. Since its formation in 1999, Rainbow has prevented several terrorist plots since its activation but was deactivated in 2012. The unit was reactivated three years later under a new director codenamed "Six", to combat the White Masks and their widespread terrorist attacks.',
             ops: [
                 { nick: 'Recruit', flag: 'nato', doc: 'A Highly Customizable Operator, the Recruit varies between equipment from the five base-game CTUs. As such, the Recruit brings more versatility than any other Operator, but lacks the ability to properly specialize in any particular role.' }
             ]
