@@ -1,31 +1,8 @@
-.header {
-	color: red;
-	height: 400px;
-	text-align: center;
-	background-image: url(../img/banner.webp);
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-size: contain;
-}
-body {
-	background-color:black;
-}
-h1, h2, h3 {
-	font-family: Stencil;
-	font-weight: normal;
-}
-h1 {
-	font-size:70px;
-}
-h2 {
-	font-size:30px;
-}
-h2.op {
-	color:white;
-}
-h3 {
-	font-size:20px;
-	color:white;
+#bookmarks{
+	position: sticky;
+	top: 8px;
+	height: 0px;
+	z-index: 2;
 }
 a {
 	padding: 2px 5px;
@@ -37,11 +14,8 @@ a:hover {
 	color:red;
 	background-color:black;
 }
-#bookmarks{
-	position: sticky;
-	top: 8px;
-	height: 0px;
-	z-index: 2;
+body {
+	background-color:black;
 }
 div.column {
 	display: inline-block;
@@ -66,7 +40,7 @@ div.column.desc.op {
 	width: 59%;
 }
 div.unit {
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-bottom: 5px;
 }
 div.info {
@@ -90,4 +64,21 @@ img.flag {
 	min-height:50px;
 	max-height:50px;
 	border:solid white 1px;
+}
+h1, h2, h3 {
+	font-family: Stencil;
+	font-weight: normal;
+}
+h1 {
+	font-size:70px;
+}
+h2 {
+	font-size:30px;
+}
+h2.op {
+	color:white;
+}
+h3 {
+	font-size:20px;
+	color:white;
 }

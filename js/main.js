@@ -3,17 +3,10 @@
 
 var loadUnits = function loadUnits(document) {
     var units = getUnitsData();
-    document.getElementById("header").innerHTML = getHeaderHtml(units);
     document.getElementById("bookmarks").innerHTML = getBookmarksHtml(units);
     document.getElementById("units").innerHTML = getUnitsHtml(units);
 }
 
-var getHeaderHtml = function getBookmarksHtml(units) {
-    var html = '';
-    html += '<div class="header">';
-    html += '</div>';
-    return html;
-};
 var getBookmarksHtml = function getBookmarksHtml(units) {
     var html = '';
 
