@@ -17,6 +17,7 @@ var getBookmarksHtml = function getBookmarksHtml(units) {
         html += '    <br>';
         html += '</div>'
     });
+    html += '<div class="postBookmark"></div>';
     return html;
 };
 

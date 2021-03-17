@@ -10,6 +10,10 @@ div.bookmark {
 	height: 1.7em;
 	background-image:linear-gradient(to right, #272727, darkolivegreen);
 }
+div.postBookmark {
+	background-image: linear-gradient(to right, #272727, darkolivegreen); 
+	height: 10000000px;
+}
 a {
 	padding: 2px 5px;
 	vertical-align: top;
