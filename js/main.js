@@ -9,7 +9,7 @@ var loadUnits = function loadUnits(document) {
 
 var getBookmarksHtml = function getBookmarksHtml(units) {
     var html = '';
-
+    html += '<h1>Rainbow 6 Operators</h1>'
     units.forEach(function(unit) {
         html += '<div class="bookmark">'
         html += '    <img class="icon" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
@@ -24,51 +24,53 @@ var getUnitsHtml = function getUnitsHtml(units) {
     var html = '';
 
     units.forEach(function(unit) {
-        html += '<div id="' + unit.id + '" class="unit" style="color:' + unit.color + '">';
-        html += '    <div class="column pic unit">';
-        html += '        <img class="badge" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
+        html += '<section id="' + unit.id + '">';
+        html += '    <div class="unit" style="color:' + unit.color + '">';
+        html += '        <div class="column pic unit">';
+        html += '            <img class="badge" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
+        html += '        </div>';
+        html += '        <div class="column desc unit">';
+        html += '            <h2>' + unit.short + '</h2>';
+        html += '            <h3>' + unit.name + '</h3>';
+        html += '            <br>';
+        html += '            <div class="info">' + unit.doc + '</div>';
+        html += '        </div>';
         html += '    </div>';
-        html += '    <div class="column desc unit">';
-        html += '        <h1>' + unit.short + '</h1>';
-        html += '        <h2>' + unit.name + '</h2>';
-        html += '        <br>';
-        html += '        <div class="info">' + unit.doc + '</div>';
-        html += '    </div>';
-        html += '</div>';
-        html += '<div style="background-image:linear-gradient(to right, #272727, ' + unit.color + ')">';
+        html += '    <div style="background-image:linear-gradient(to right, #272727, ' + unit.color + ')">';
         var i = 0;
         unit.ops.forEach(function(op) {
-            html += '<div class="column operator">';
-            html += '    <div class="column pic op">';
-            html += '        <img class="avatar" src="img/ops/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
-            html += '        <br>';
-            html += '        <img class="fullBody" src="img/ops/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
-            html += '    </div>';
-            html += '    <div class="column desc op">';
-            html += '        <h2 class="op">' + op.nick + '</h2>';
-            if (op.first != null) {
-                html += '        <h3>' + op.first + ' ' + op.last + '</h3>';
-            }
-            html += '        <img class="flag" src="img/flags/' + op.flag + '.png">';
-            html += '        <br>';
-            if (op.side != null) {
-                html += '        <img class="side" src="img/' + op.side + '.webp">';
-                html += '        <div class="info">Born on ' + op.birth + ' at ' + op.place + '</div>';
-                html += '        <div class="info">' + op.age + 'yo</div>';
-                html += '        <div class="info">' + op.height + 'm</div>';
-                html += '        <div class="info">' + op.weight + 'kg</div>';
-            }
-            html += '        <br>';
-            html += '        <div class="info">' + op.doc + '</div>';
-            html += '    </div>';
-            html += '</div>';
-            i++;
-            if(i == 2) {
-                html += '<br>';
-                i = 0;
-            }
-        });
-        html += '</div>';
+        html += '    <div class="column operator">';
+        html += '        <div class="column pic op">';
+        html += '            <img class="avatar" src="img/ops/' + op.nick + '/avatar.webp" alt="' + op.nick + '">';
+        html += '            <br>';
+        html += '            <img class="fullBody" src="img/ops/' + op.nick + '/fullBody.webp" alt="' + op.nick + '">';
+        html += '        </div>';
+        html += '        <div class="column desc op">';
+        html += '            <h3 class="op">' + op.nick + '</h3>';
+        if (op.first != null) {
+        html += '            <h4>' + op.first + ' ' + op.last + '</h4>';
+        }
+        html += '            <img class="flag" src="img/flags/' + op.flag + '.png">';
+        html += '            <br>';
+        if (op.side != null) {
+        html += '            <img class="side" src="img/' + op.side + '.webp">';
+        html += '            <div class="info">Born on ' + op.birth + ' at ' + op.place + '</div>';
+        html += '            <div class="info">' + op.age + 'yo</div>';
+        html += '            <div class="info">' + op.height + 'm</div>';
+        html += '            <div class="info">' + op.weight + 'kg</div>';
+        }
+        html += '            <br>';
+        html += '            <div class="info">' + op.doc + '</div>';
+        html += '        </div>';
+        html += '    </div>';
+        i++;
+        if(i == 2) {
+        html += '    <br>';
+        i = 0;
+        }
+    });
+    html += '    </div>';
+    html += '</section>';
     });
     return html;
 };

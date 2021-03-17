@@ -1,11 +1,4 @@
-#bookmarks{
-	width: 170px;
-	position: sticky;
-	top: 8px;
-	height: 0px;
-	z-index: 2;
-}
-#bookmarks{
+header{
 	width: calc( 100% - 170px );
 	position: sticky;
 	top: 8px;
@@ -13,7 +6,9 @@
 	z-index: 2;
 }
 div.bookmark {
-	width: 170px;
+	width: 250px;
+	height: 1.7em;
+	background-image:linear-gradient(to right, #272727, darkolivegreen);
 }
 a {
 	padding: 2px 5px;
@@ -23,8 +18,7 @@ a {
 	font-weight: bold;
 }
 a:hover {
-	color:red;
-	background-color:black;
+	color:tomato;
 }
 body {
 	background-color:black;
@@ -81,20 +75,24 @@ img.flag {
 	max-height:50px;
 	border:solid white 1px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: Stencil;
 	font-weight: normal;
 }
-h1 {
-	font-size:70px;
+h1{
+	color: tomato;
+	text-align: center;
 }
 h2 {
-	font-size:30px;
-}
-h2.op {
-	color:white;
+	font-size:70px;
 }
 h3 {
+	font-size:30px;
+}
+h3.op {
+	color:white;
+}
+h4 {
 	font-size:20px;
 	color:white;
 }
