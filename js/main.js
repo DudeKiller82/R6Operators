@@ -11,7 +11,11 @@ var getBookmarksHtml = function getBookmarksHtml(units) {
     var html = '';
 
     units.forEach(function(unit) {
-        html += '<a href="#' + unit.id + '" style="background-image:linear-gradient(to right, #272727, ' + unit.color + ')">' + unit.short + '</a>';
+        html += '<div class="bookmark">'
+        html += '    <img class="icon" src="img/units/' + unit.id + '/badge.webp" alt="' + units.id + '">';
+        html += '    <a href="#' + unit.id + '">' + unit.short + '</a>';
+        html += '    <br>';
+        html += '</div>'
     });
     return html;
 };

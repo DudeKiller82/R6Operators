@@ -1,14 +1,26 @@
 #bookmarks{
+	width: 170px;
 	position: sticky;
 	top: 8px;
 	height: 0px;
 	z-index: 2;
 }
+#bookmarks{
+	width: calc( 100% - 170px );
+	position: sticky;
+	top: 8px;
+	height: 0px;
+	z-index: 2;
+}
+div.bookmark {
+	width: 170px;
+}
 a {
 	padding: 2px 5px;
+	vertical-align: top;
 	color: white;
 	text-decoration: none;
-    box-sizing: border-box;
+	font-weight: bold;
 }
 a:hover {
 	color:red;
@@ -28,25 +40,29 @@ div.column.pic {
 	text-align: center;
 }
 div.column.pic.unit {
-	width: 25%;
+	width: 430px;
 }
 div.column.pic.op {
 	width: 40%;
 }
 div.column.desc.unit {
-	width: 64%;
+	width: calc( 99% - 430px );
 }
 div.column.desc.op {
 	width: 59%;
 }
 div.unit {
-	padding-top: 20px;
+	padding-top: 5px;
 	padding-bottom: 5px;
 }
 div.info {
 	color: white;
 	text-align: justify;
 	font-size: 20px;
+}
+img.icon {
+	max-width:20px;
+    min-width:20px;
 }
 img.badge {
 	max-height:300px;
