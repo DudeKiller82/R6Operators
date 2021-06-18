@@ -48,9 +48,7 @@ var getUnitsHtml = function getUnitsHtml(units) {
         html += '        </div>';
         html += '        <div class="column desc op">';
         html += '            <h3 class="op">' + op.nick + '</h3>';
-        if (op.first != null) {
         html += '            <h4>' + op.first + ' ' + op.last + '</h4>';
-        }
         html += '            <img class="flag" src="img/flags/' + op.flag + '.png">';
         html += '            <br>';
         if (op.side != null) {
